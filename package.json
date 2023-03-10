@@ -1,9 +1,9 @@
 {
-  "name": "baibian-camera",
+  "name": "magic-camera-h5",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host --open",
     "build": "vite build"
   },
   "dependencies": {
