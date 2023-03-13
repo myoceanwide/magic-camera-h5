@@ -32,11 +32,17 @@ export default defineConfig({
         {
           libraryName: "vant",
           esModule: true,
-          resolveStyle: (name) => {
-            return `vant/es/${name}/style/index`;
-          },
+          resolveStyle: (name) => `../es/${name}/style`,
         },
       ],
+      // libs: [
+      //     libraryName: "vant",
+      //     esModule: true,
+      //     resolveStyle: (name) => {
+      //       return `vant/es/${name}/style/index`;
+      //     },
+      //   },
+      // ],
     }),
     Components({
       dirs: ["src/components"],
@@ -135,5 +141,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
       components: path.resolve(__dirname, "src/components"),
     },
+    // 在最后加上 .vue
+    extensions: [".mjs", ".js", ".json", ".vue"],
   },
 });
